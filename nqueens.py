@@ -55,7 +55,6 @@ class NQueensSolver:
         return True
 
     def solve(self, row=0):
-        # jika semua queen berhasil ditempatkan
         if row == self.n:
             self.solutions += 1
             self.print_board(message=f"Solusi ditemukan! Total solusi: {self.solutions}")
